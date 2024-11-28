@@ -1,0 +1,14 @@
+D:\TelkomData\Alpro\TugasW11\bin\Debug\net9.0\TugasW11.exe
+D:\TelkomData\Alpro\TugasW11\bin\Debug\net9.0\TugasW11.deps.json
+D:\TelkomData\Alpro\TugasW11\bin\Debug\net9.0\TugasW11.runtimeconfig.json
+D:\TelkomData\Alpro\TugasW11\bin\Debug\net9.0\TugasW11.dll
+D:\TelkomData\Alpro\TugasW11\bin\Debug\net9.0\TugasW11.pdb
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.GeneratedMSBuildEditorConfig.editorconfig
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.AssemblyInfoInputs.cache
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.AssemblyInfo.cs
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.csproj.CoreCompileInputs.cache
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.dll
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\refint\TugasW11.dll
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.pdb
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\TugasW11.genruntimeconfig.cache
+D:\TelkomData\Alpro\TugasW11\obj\Debug\net9.0\ref\TugasW11.dll
