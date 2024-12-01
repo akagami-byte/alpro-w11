@@ -12,15 +12,15 @@ class Urutsiswa
     public static void RerataSiswa()
     {
         Console.WriteLine();
-        int sum = Nilai.Sum();
-        int average = sum / Nilai.Length;
+        int sum = Nilai.Sum(); //pake library Linq tinggal panggil Array.Sum untuk jumlah
+        int average = sum / Nilai.Length; //buat variable baru untuk mendefinisikan Jumlah / banyak angka (5)
         Console.WriteLine($"Nilai Rata - Rata: {average}");
     }
 
     public static void DataMhs()
     {
         Console.WriteLine();
-        for (int i = 0; i < Nama.Length; i++)
+        for (int i = 0; i < Nama.Length; i++) //print selama i < panjang array
         {
             Console.WriteLine($"Nama: {Nama[i]}, Nilai: {Nilai[i]}");
         }
@@ -29,30 +29,44 @@ class Urutsiswa
     public static void MaxMinNilai()
     {
         Console.WriteLine();
-        // Finding max
-        int Max = Nilai.Max();
-        // Positioning max
+        // Cari nilai max
+        int Max = Nilai.Max(); //pake library linq
+        //  Cari value yang bernilai max
         int Pmax = Array.IndexOf(Nilai, Max);
         Console.WriteLine($"Nilai Tertinggi: {Max}, {Nama[Pmax]}");
-        // Finding min
+        // cari nilai min
         int Min = Nilai.Min();
-        // Positioning min
+        // Cari value yang bernilai min
         int Pmin = Array.IndexOf(Nilai, Min);
-        Console.WriteLine($"Nilai Tertinggi: {Min}, {Nama[Pmin]}");
+        Console.WriteLine($"Nilai Terendah: {Min}, {Nama[Pmin]}");
     }
+
+    public static void DescendFunc(){
+        Array.Sort(Nilai);
+        Array.Reverse(Nilai);
+        Console.WriteLine("\n Nilai Tertinggi ke terendah (descending)");
+        for (int i = 0; i < Nama.Length; i++)
+        {
+            Console.Write($"{Nilai[i]} ");
+        }
+        Console.WriteLine("");
+    }
+
+
 
     string OpsiPilih()
     {
-        Console.WriteLine("\nPilih Menu: ");
+        Console.WriteLine("\n==========Pilih Opsi========== ");
         Console.WriteLine("1. Tampilkan semua data Mahasiswa: ");
-        Console.WriteLine("Tampilan Nilai tertinggi dan Terendah: ");
+        Console.WriteLine("2. Tampilan Nilai tertinggi dan Terendah: ");
         Console.WriteLine("3. Hitung Rata - rata Nilai: ");
         Console.WriteLine("4. Tampilkan data mahasiswa berdasarkan nilai (descending): ");
-        Console.Write("5. Keluar  ");
+        Console.WriteLine("5. Keluar  \n");
+        Console.Write("Masukkan angka sesuai Opsi: ");
         return Console.ReadLine();
     }
 
-    static void Main()
+    static void Main(string[] args)
         {
             Urutsiswa Pilihan = new Urutsiswa();
             string Pilih;
@@ -61,18 +75,19 @@ class Urutsiswa
                 if (Pilih == "1"){
                     DataMhs();
                 }
-                if (Pilih == "2"){
+                else if (Pilih == "2"){
                     MaxMinNilai();
                 }
-                if (Pilih == "3"){
+                else if (Pilih == "3"){
                     RerataSiswa();
                 }
-                else{
-                    Console.WriteLine("Tidak ada angka ");
+                else if (Pilih == "4"){
+                    DescendFunc();
                 }
+                
             }
             while (Pilih != "5");
-        // MaxMinNilai();1
+        // MaxMinNilai();
         // DataMhs();
         // RerataSiswa();
         }
